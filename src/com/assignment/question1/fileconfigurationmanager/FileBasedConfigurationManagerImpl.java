@@ -2,7 +2,7 @@ package com.assignment.question1.fileconfigurationmanager;
 
 public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationManager{
 
-    private static FileBasedConfigurationManagerImpl instance;
+    private static FileBasedConfigurationManagerImpl instance=null;
     private String name;
 
     public String getName() {
@@ -69,6 +69,6 @@ public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationMan
 
     public static void resetInstance() {
         // TODO Auto-generated method stub
-        instance.clear();
+        instance=null;
     }
 }
